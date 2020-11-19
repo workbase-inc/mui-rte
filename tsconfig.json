@@ -8,6 +8,7 @@
         "esModuleInterop": true,
         "noImplicitReturns": true,
         "noUnusedParameters": true,
+        "noUnusedLocals": true,
         "outDir": "dist",
         "baseUrl": ".",
         "jsx": "react",
@@ -23,7 +24,6 @@
         }
     },
     "include": [
-        "src/**/*",
-        "declarations.d.ts"
+        "src/**/*"
     ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "mui-rte",
-  "version": "1.25.0",
+  "version": "1.26.2",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
     "material-ui",
@@ -71,8 +71,6 @@
     "@types/draft-js": "^0.10.43",
     "classnames": "^2.2.6",
     "draft-js": "^0.11.6",
-    "draft-js-plugins-editor": "^3.0.0",
-    "draftjs-conductor": "^1.0.1",
     "immutable": "^3.8.2"
   },
   "files": [
