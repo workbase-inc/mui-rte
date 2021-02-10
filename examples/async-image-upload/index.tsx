@@ -197,7 +197,8 @@ const AsyncImageUpload: FunctionComponent = () => {
                             return "handled"
                         }
                         return "not-handled"
-                    }
+                    },
+                    plugins: [],
                 }}
             />
         </>
