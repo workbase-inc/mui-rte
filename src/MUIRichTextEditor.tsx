@@ -6,7 +6,7 @@ import { createStyles, withStyles, WithStyles, Theme } from '@material-ui/core/s
 import Paper from '@material-ui/core/Paper'
 import {
     EditorState, convertFromRaw, RichUtils, AtomicBlockUtils,
-    CompositeDecorator, convertToRaw, DefaultDraftBlockRenderMap, DraftEditorCommand,
+    CompositeDecorator, convertToRaw, DefaultDraftBlockRenderMap, DraftBlockRenderMap, DraftEditorCommand,
     DraftHandleValue, DraftStyleMap, ContentBlock, DraftDecorator, getVisibleSelectionRect,
     SelectionState, KeyBindingUtil, getDefaultKeyBinding, Modifier
 } from 'draft-js'
@@ -92,7 +92,7 @@ export type TMUIRichTextEditorProps = {
     inlineToolbar?: boolean
     inlineToolbarControls?: Array<TToolbarControl>
     draftEditorProps?: TDraftEditorProps
-    keyBindingFn?: ((e: KeyboardEvent<HTMLElement>) => string | null) | undefined
+    keyBindingFn?: ((e: React.KeyboardEvent<HTMLElement>) => string | null) | undefined
     keyCommands?: TKeyCommand[]
     maxLength?: number
     maxHeight?: number
