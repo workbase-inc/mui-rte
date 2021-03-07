@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/workbase/mui-rte#readme",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
   "scripts": {
     "serve": "cross-env webpack-dev-server --mode development",
     "watch": "cross-env NODE_ENV=development rollup -c -w",
