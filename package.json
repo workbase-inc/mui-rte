@@ -2,7 +2,6 @@
   "name": "@workbase/mui-rte",
   "version": "1.26.3",
   "description": "Material-UI Rich Text Editor and Viewer",
-  "type": "module",
   "keywords": [
     "material-ui",
     "rich text editor",

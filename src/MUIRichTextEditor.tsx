@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState, useRef, 
+import React, { FunctionComponent, useEffect, useState, useRef,
     forwardRef, useImperativeHandle, RefForwardingComponent } from 'react'
 import Immutable from 'immutable'
 import classNames from 'classnames'
@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper'
 import {
     EditorState, convertFromRaw, RichUtils, AtomicBlockUtils,
     CompositeDecorator, convertToRaw, DefaultDraftBlockRenderMap, DraftBlockRenderMap, DraftEditorCommand,
-    DraftHandleValue, DraftStyleMap, ContentBlock, DraftDecorator, getVisibleSelectionRect,
+    DraftHandleValue, DraftStyleMap, ContentBlock, DraftDecorator,
     SelectionState, KeyBindingUtil, getDefaultKeyBinding, Modifier
 } from 'draft-js'
 import Editor from 'draft-js-plugins-editor';
@@ -464,8 +464,8 @@ const MUIRichTextEditor: RefForwardingComponent<TMUIRichTextEditorRef, IMUIRichT
     }
 
     const insertAutocompleteSuggestionAsText = (selection: SelectionState, value: string) => {
-        const currentContentState = editorState.getCurrentContent()
-        const entityKey = currentContentState.createEntity("AC_ITEM", 'IMMUTABLE').getLastCreatedEntityKey()
+        // const currentContentState = editorState.getCurrentContent()
+        // const entityKey = currentContentState.createEntity("AC_ITEM", 'IMMUTABLE').getLastCreatedEntityKey()
         const contentState = Modifier.replaceText(editorStateRef.current!.getCurrentContent(),
             selection,
             value)
